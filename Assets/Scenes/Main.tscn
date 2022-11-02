@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Scenes/Blinky.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Scenes/Wall.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Blinky" parent="." instance=ExtResource( 1 )]
+position = Vector2( 500, 300 )
+scale = Vector2( 0.313, 0.313 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 260, 260 )
+scale = Vector2( 0.313, 0.313 )
