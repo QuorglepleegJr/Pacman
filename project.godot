@@ -9,13 +9,19 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "KinematicBody2D",
+"base": "Mover",
 "class": "Ghost",
 "language": "GDScript",
 "path": "res://Assets/Scripts/Ghost.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Mover",
+"language": "GDScript",
+"path": "res://Assets/Scripts/Mover.gd"
 } ]
 _global_script_class_icons={
-"Ghost": ""
+"Ghost": "",
+"Mover": ""
 }
 
 [application]
