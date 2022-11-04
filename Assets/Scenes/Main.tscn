@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Assets/Scenes/Blinky.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Scenes/Wall.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Scenes/Pacman.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/Scripts/Pacman.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Scenes/Pinky.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Scenes/Inky.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Scenes/Marker.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Scenes/Clyde.tscn" type="PackedScene" id=8]
 
 [node name="Main" type="Node2D"]
 
@@ -86,6 +90,34 @@ scale = Vector2( 0.313, 0.313 )
 [node name="Blinky" parent="Ghosts" instance=ExtResource( 1 )]
 position = Vector2( 500, 300 )
 scale = Vector2( 0.313, 0.313 )
+
+[node name="Pinky" parent="Ghosts" instance=ExtResource( 5 )]
+position = Vector2( 380, 300 )
+scale = Vector2( 0.313, 0.313 )
+
+[node name="Inky" parent="Ghosts" instance=ExtResource( 6 )]
+position = Vector2( 100, 100 )
+scale = Vector2( 0.313, 0.313 )
+
+[node name="Clyde" parent="Ghosts" instance=ExtResource( 8 )]
+position = Vector2( 300, 400 )
+scale = Vector2( 0.313, 0.313 )
+
+[node name="Markers" type="Node" parent="."]
+
+[node name="Blink Marker" parent="Markers" instance=ExtResource( 7 )]
+scale = Vector2( 1, 1 )
+target = "Blinky"
+
+[node name="Pink Marker" parent="Markers" instance=ExtResource( 7 )]
+position = Vector2( 380, 300 )
+target = "Pinky"
+
+[node name="Ink Marker" parent="Markers" instance=ExtResource( 7 )]
+target = "Inky"
+
+[node name="Clyde Marker" parent="Markers" instance=ExtResource( 7 )]
+target = "Clyde"
 
 [node name="Pacman" parent="." instance=ExtResource( 3 )]
 position = Vector2( 400, 200 )

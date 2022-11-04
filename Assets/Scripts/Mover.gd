@@ -5,6 +5,7 @@ class_name Mover
 var WALL_POSITIONS = [] # Contains all wall positions - var rather than const due to requiring method return
 const DIRECTIONS = [Vector2(0,-1),Vector2(1,0),Vector2(0,1),Vector2(-1,0)] # All unit directions - up, right, etc
 const SPEED_SCALER = 50
+const DEFAULT_POS = Vector2(25,15)
 
 var turn_ready : bool = true # Whether turns have been made
 var tile_pos : Vector2 = Vector2(0,0) # Current Tile Postiion

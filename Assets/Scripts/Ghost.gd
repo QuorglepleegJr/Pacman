@@ -54,7 +54,7 @@ func getDirection():
 func getTargetTile():
 	# Designed to be overridden in individual ghost classes
 	print("Caution: getTargetTile function called on base class Ghost instead of inheritants")
-	return Vector2(25,15) # Return center of screen
+	return DEFAULT_POS # Return center of screen
 
 # Mover method overrides
 

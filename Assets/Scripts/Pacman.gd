@@ -1,6 +1,7 @@
 extends Mover
 
 var new_direction : Vector2 = Vector2(0,0)
+var forwards : Vector2 = Vector2(0,0)
 
 func classPhysicsBehaviour():
 	if Input.is_action_just_pressed("ui_left"):
@@ -14,7 +15,7 @@ func classPhysicsBehaviour():
 
 func classOnTileBehaviour():
 	move_direction = new_direction
+	forwards = new_direction
 	if tile_pos + move_direction in WALL_POSITIONS:
 		move_direction = Vector2(0,0)
 		turn_ready = true
-	
