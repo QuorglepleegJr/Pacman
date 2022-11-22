@@ -15,98 +15,75 @@
 
 [node name="Wall" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 480, 280 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall2" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 460, 280 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall3" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 440, 280 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall4" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 420, 280 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall5" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 400, 280 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall6" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 380, 280 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall7" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 380, 260 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall8" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 380, 240 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall9" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 380, 220 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall10" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 420, 220 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall11" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 420, 240 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall12" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 520, 260 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall13" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 520, 240 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall14" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 500, 240 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall15" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 480, 240 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall16" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 460, 240 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall17" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 440, 240 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Wall18" parent="Walls" instance=ExtResource( 2 )]
 position = Vector2( 520, 280 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Ghosts" type="Node" parent="."]
 
 [node name="Blinky" parent="Ghosts" instance=ExtResource( 1 )]
 position = Vector2( 500, 300 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Pinky" parent="Ghosts" instance=ExtResource( 5 )]
 position = Vector2( 380, 300 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Inky" parent="Ghosts" instance=ExtResource( 6 )]
 position = Vector2( 100, 100 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Clyde" parent="Ghosts" instance=ExtResource( 8 )]
 position = Vector2( 300, 400 )
-scale = Vector2( 0.313, 0.313 )
 
 [node name="Markers" type="Node" parent="."]
 
 [node name="Blink Marker" parent="Markers" instance=ExtResource( 7 )]
-scale = Vector2( 1, 1 )
 target = "Blinky"
 
 [node name="Pink Marker" parent="Markers" instance=ExtResource( 7 )]
@@ -120,6 +97,6 @@ target = "Inky"
 target = "Clyde"
 
 [node name="Pacman" parent="." instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 400, 200 )
-scale = Vector2( 0.313, 0.313 )
 script = ExtResource( 4 )
